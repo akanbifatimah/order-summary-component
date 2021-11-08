@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Red Hat Display", sans-serif;
+	min-height: 100vh;
+	background-image: url("./images/pattern-background-mobile.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: hsl(225, 100%, 94%);
+	position: relative;
+}
+.card {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 450px;
+	background: white;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.upper-container {
+	padding: 10px;
+	text-align: center;
+}
+.content h3 {
+	color: hsl(223, 47%, 23%);
+	font-weight: 900;
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+.content p {
+	color: #8a8a8a;
+	margin-bottom: 25px;
+}
+.middle-container {
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 25px;
+	background-color: hsl(225, 100%, 98%);
+}
+.right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.right div {
+	margin-left: 20px;
+}
+.right div h5 {
+	font-weight: 900;
+	font-size: 15px;
+	color: hsl(223, 47%, 23%);
+}
+.right div p {
+	font-size: 14px;
+	color: #8a8a8a;
+}
+
+.right a {
+	font-weight: 900;
+	color: hsl(223, 47%, 23%);
+	transition: color 0.3s ease;
+}
+.middle-container a:hover {
+	text-decoration: none;
+	color: hsl(245, 75%, 52%);
+}
+a.first-button {
+	display: block;
+	text-decoration: none;
+	padding: 20px 0;
+	margin: 30px 0;
+	background-color: hsl(245, 75%, 52%);
+	color: white;
+	border-radius: 5px;
+	transition: color 0.3s ease;
+}
+a.first-button:hover {
+	background-color: hsl(224, 23%, 55%);
+}
+a.second-button {
+	text-decoration: none;
+	color: hsl(224, 23%, 55%);
+	font-weight: 900;
+	transition: color 0.3s ease;
+}
+a.second-button:hover {
+	color: hsl(223, 47%, 23%);
+}
+@media only screen and (max-width: 425px) {
+	body {
+		font-size: 13px;
+		background-image: url("./images/pattern-background-mobile.svg");
+	}
+
+	.card {
+		max-width: 87px;
+	}
+
+	.content h3 {
+		font-size: 23px;
+	}
+	div.middle-container {
+		padding: 12px;
+	}
+	.right div {
+		margin-left: 10px;
+	}
+	a.first-button,
+	.second-button,
+	.middle-container a {
+		font-size: 13px;
+	}
+}
